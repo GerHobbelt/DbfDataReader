@@ -21,6 +21,8 @@ namespace DbfDataReader
 
             if (string.IsNullOrWhiteSpace(value))
                 Value = null;
+            else if (value == "00000000")
+                Value = DateTime.MinValue;
             else if (DateTime.TryParseExact(value, "yyyyMMdd", null,
                 DateTimeStyles.AllowLeadingWhite | DateTimeStyles.AllowTrailingWhite,
                 out DateTime valueOut))
