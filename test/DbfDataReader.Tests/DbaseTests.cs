@@ -1,6 +1,7 @@
 using CsvHelper;
 using Shouldly;
 using System;
+using System.Globalization;
 using System.IO;
 
 namespace DbfDataReader.Tests
@@ -60,9 +61,10 @@ namespace DbfDataReader.Tests
         protected void ValidateRowValues(string path)
         {
             var dbfRecord = new DbfRecord(DbfTable);
+            var culture = CultureInfo.CurrentCulture;
 
             using (var textReader = File.OpenText(path))
-            using (var csvParser = new CsvParser(textReader))
+            using (var csvParser = new CsvParser(textReader, culture))
             {
                 csvParser.Read();
 
