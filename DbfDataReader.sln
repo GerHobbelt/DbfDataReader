@@ -49,7 +49,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbfDataReader", "src\DbfDat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbfDataReader.Tests", "test\DbfDataReader.Tests\DbfDataReader.Tests.csproj", "{A0D45C13-CE45-444C-B5D3-FF9425BE0635}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbf", "..\dbf\dbf.csproj", "{CC1484C6-4D0F-4FAD-8F66-323C8E7E3471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbf", "..\DbfDump\dbf.csproj", "{CC1484C6-4D0F-4FAD-8F66-323C8E7E3471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
