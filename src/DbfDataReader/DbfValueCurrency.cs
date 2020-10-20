@@ -17,7 +17,7 @@ namespace DbfDataReader
         {
             var bytes = binaryReader.ReadBytes(Length);
 
-            var value = BitConverter.ToUInt64(bytes, 0);
+            var value = BitConverter.ToInt64(bytes, 0);
             Value = value / 10000.0f;
         }
 
